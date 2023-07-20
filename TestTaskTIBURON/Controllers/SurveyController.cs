@@ -1,16 +1,16 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using TestTaskTIBURON.DB;
+using TestTaskTIBURON.DB.Interfaces;
 
 namespace TestTaskTIBURON.Controllers
 {
     [Route("/")]
-    public class HomeController : Controller
+    public class SurveyController : Controller
     {
-        SurveyDbContext db;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public HomeController(SurveyDbContext Db)
+        public SurveyController(IUnitOfWork unitOfWork)
         {
-            db = Db;
+            _unitOfWork = unitOfWork;
         }
 
         [HttpGet]

@@ -1,7 +1,9 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TestTaskTIBURON.Core.Entities
 {
+    [Index(nameof(SurveyId))]
     public class Interview : Entity
     {
         public DateTime WasStater { get; set; }

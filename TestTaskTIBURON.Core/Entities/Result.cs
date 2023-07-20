@@ -1,7 +1,9 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TestTaskTIBURON.Core.Entities
 {
+    [Index(nameof(QuestionId), nameof(AnswerId), nameof(InterviewId))]
     public class Result : Entity
     {
         public DateTime WasCommited { get; set; }

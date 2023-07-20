@@ -1,8 +1,10 @@
 ﻿
+using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TestTaskTIBURON.Core.Entities
 {
+    [Index(nameof(QuestionId))]
     public class Answer : Entity
     {
         public string Text { get; set; }
