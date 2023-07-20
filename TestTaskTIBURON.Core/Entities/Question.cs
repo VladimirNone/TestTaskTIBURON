@@ -1,11 +1,14 @@
 ﻿
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace TestTaskTIBURON.Core.Entities
 {
     public class Question : Entity
     {
         public string Text { get; set; }
 
-        public string SurveyId { get; set; }
+        [ForeignKey(nameof(Survey))]
+        public int SurveyId { get; set; }
         public Survey Survey { get; set; }
 
         public List<Answer> Answers { get; set; }

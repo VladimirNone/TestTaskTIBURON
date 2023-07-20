@@ -1,6 +1,10 @@
+using Microsoft.EntityFrameworkCore;
+using TestTaskTIBURON.DB;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddDbContext<SurveyDbContext>(options => options.UseNpgsql(builder.Configuration.GetConnectionString("SurveyDbConnection")));
 builder.Services.AddControllers();
 
 var app = builder.Build();

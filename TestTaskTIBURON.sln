@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33403.182
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestTaskTIBURON", "TestTaskTIBURON\TestTaskTIBURON.csproj", "{6DD24851-901B-4A60-A2ED-370C48EC4520}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestTaskTIBURON", "TestTaskTIBURON\TestTaskTIBURON.csproj", "{6DD24851-901B-4A60-A2ED-370C48EC4520}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestTaskTIBURON.DB", "TestTaskTIBURON.DB\TestTaskTIBURON.DB.csproj", "{6288BAB6-BEAB-4B12-BA24-B3E67CBCFEDC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestTaskTIBURON.DB", "TestTaskTIBURON.DB\TestTaskTIBURON.DB.csproj", "{6288BAB6-BEAB-4B12-BA24-B3E67CBCFEDC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestTaskTIBURON.Core", "TestTaskTIBURON.Entities\TestTaskTIBURON.Core.csproj", "{2F10F19A-CC55-4129-A530-F48FA3AAE8A5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestTaskTIBURON.Core", "TestTaskTIBURON.Core\TestTaskTIBURON.Core.csproj", "{2F10F19A-CC55-4129-A530-F48FA3AAE8A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
