@@ -11,7 +11,7 @@ Get запрос
 Для тестового задания использовались сущности при возвращении данных, однако в рабочем проекте необходимо использовать DTO, которые наполнять с помощью AutoMapper.
 
 Post запрос
-> http://localhost:5000/survey/postAnswer 
+> http://localhost:5000/survey/postAnswers 
 
 Payload
 ```
