@@ -8,7 +8,7 @@ namespace TestTaskTIBURON.DB.Implementations.Repositories
 {
     public class GeneralRepository<T> : IGeneralRepository<T> where T : Entity
     {
-        public DbSet<T> DbSet { get; protected set; }
+        protected DbSet<T> DbSet { get; set; }
         protected SurveyDbContext DbContext { get; private set; }
 
         public GeneralRepository(SurveyDbContext dbContext)
@@ -29,7 +29,7 @@ namespace TestTaskTIBURON.DB.Implementations.Repositories
             DbSet.Update(entity);
         }
 
-        public virtual async Task<T?> GetEntityAsync(string id)
+        public virtual async Task<T?> GetEntityAsync(int id)
         {
             return await DbSet.FindAsync(id);
         }

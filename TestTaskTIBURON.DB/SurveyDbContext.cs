@@ -32,10 +32,12 @@ namespace TestTaskTIBURON.DB
                 {
                     new Question(){ 
                         Text = "Сколько книг вы прочитали?", 
-                        Answers = answersForQuestion1 },
+                        Answers = answersForQuestion1,
+                        Order = 1},
                     new Question(){ 
                         Text = "В каком районе Москвы Вы проживаете?", 
-                        Answers = answersForQuestion2 },
+                        Answers = answersForQuestion2,
+                        Order = 2 },
                 };
                 
                 var firstSurvey = new Survey() { 

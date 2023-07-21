@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using System.Text.Json.Serialization;
 using TestTaskTIBURON.DB;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -6,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddDbContext<SurveyDbContext>(options => options.UseNpgsql(builder.Configuration.GetConnectionString("SurveyDbConnection")));
 builder.Services.AddDbInfrastructure();
-builder.Services.AddControllers();
+builder.Services.AddControllers().AddJsonOptions(h=>h.JsonSerializerOptions.WriteIndented = true);
 
 var app = builder.Build();
 
